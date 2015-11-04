@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--{-->
+    <!--"name": "Hardcore Pawn",-->
+    <!--"start_time": "8:30pm",-->
+    <!--"end_time": "9:30pm",-->
+    <!--"channel": "7Mate",-->
+    <!--"rating": "M"-->
+    <!--},-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="8dp">
+
+            <TextView android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:text="Program Title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/labelStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textName"
+                android:layout_alignLeft="@+id/textName"
+                android:layout_marginRight="8dp"
+                android:text="Starts" />
+
+            <TextView
+                android:id="@+id/textStart"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/labelStart"
+                android:layout_toRightOf="@+id/labelStart"
+                android:textStyle="bold"
+                android:text="8:30pm" />
+
+            <TextView
+                android:id="@+id/labelEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textStart"
+                android:layout_toRightOf="@+id/textStart"
+                android:layout_marginRight="8dp"
+                android:text="Ends" />
+
+            <TextView
+                android:id="@+id/textEnd"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/labelEnd"
+                android:layout_toRightOf="@+id/labelEnd"
+                android:textStyle="bold"
+                android:text="10:30pm" />
+
+            <TextView android:id="@+id/labelChannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelStart"
+                android:layout_alignLeft="@+id/labelStart"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Channel" />
+
+            <TextView
+                android:id="@+id/textChannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/labelChannel"
+                android:layout_toRightOf="@+id/labelChannel"
+                android:layout_marginRight="8dp"
+                android:textStyle="bold"
+                android:text="7Mate" />
+
+            <TextView
+                android:id="@+id/labelRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/labelChannel"
+                android:layout_toRightOf="@+id/textChannel"
+                android:layout_marginRight="8dp"
+                android:text="Rating" />
+
+            <TextView
+                android:id="@+id/textRating"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/labelRating"
+                android:layout_toRightOf="@+id/labelRating"
+                android:textStyle="bold"
+                android:text="M" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
